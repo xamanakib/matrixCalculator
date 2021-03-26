@@ -36,7 +36,7 @@ nav ul li {
     color: white;
     list-style: none;
     padding: 0 10px;
-    font-size: 23px;
+    font-size: 26px;
     font-family: 'Akaya Telivigala', cursive;
     animation: all .2s ease-in;
 }
@@ -82,6 +82,7 @@ img {
     font-size: 25px;
     font-family: 'Akaya Telivigala', cursive;
     color: #0500ff;
+     font-size: 32px;
     text-shadow: 1px 1px 2px black
 }
 
