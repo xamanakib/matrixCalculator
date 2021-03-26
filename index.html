@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <meta name="description" content="Getting tired of calculating Matrix? Don't worry, calculate it by one click.Thanks.Made by AKIB">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Matrix Calculator-by Akib</title>
+</head>
+
+<body oncontextmenu="return false">
+    <div class="container">
+        <nav>
+            <ul>
+                <!-- NOTE...
+                    det for detreminant ,
+                    CoMat for Cofactor Matrix ,
+                    AdMat for Adjugate matrix,I
+                    InMat means Inverse Matrix -->
+
+                <a onclick="det()">
+                    <li id="L01"> Determinant</li>
+                </a>
+                <a onclick="CoMat()">
+                    <li id="L02">Cofactor Matrix</li>
+                </a>
+                <a onclick="AdMat()">
+                    <li id="L03">Adjugate matrix</li>
+                </a>
+                <a onclick="InMat()">
+                    <li id="L04">Inverse Matrix</li>
+                </a>
+            </ul>
+        </nav>
+
+        <div class="InAndOut">
+            <img src="icon.png" alt="" srcset="">
+            <h1>Matrix Calculator <span id="name"></span></h1>
+            <p id="brief"></p>
+
+            <div id="inputCont">
+
+                <div class="firstRow">
+                    <input type="number" id="A11" placeholder="A11">
+                    <input type="number" id="A12" placeholder="A12">
+                    <input type="number" id="A13" placeholder="A13">
+                </div>
+
+                <div class="secondRow">
+                    <input type="number" id="A21" placeholder="A21">
+                    <input type="number" id="A22" placeholder="A22">
+                    <input type="number" id="A23" placeholder="A23">
+                </div>
+
+                <div class="thirdRow">
+                    <input type="number" id="A31" placeholder="A31">
+                    <input type="number" id="A32" placeholder="A32">
+                    <input type="number" id="A33" placeholder="A33">
+                </div>
+            </div>
+            <p id="onStart">Select What You Want to Calculate</p>
+            <div class="myBtn">
+                <!-- Note: A for adjugate,C for cofactor ,D for determinant,I for Inverse -->
+                <button id="btnD" class="btn" onclick="resD()">Calculate</button>
+                <button id="btnC" class="btn" onclick="resC()">Calculate</button>
+                <button id="btnA" class="btn" onclick="resA()">Calculate</button>
+                <button id="btnI" class="btn" onclick="resI()">Calculate</button>
+                <button id="clr" class="btn" onclick="clearme()">Clear</button>
+            </div>
+            <p id="Res"></p>
+            <div class="outCont">
+                <span id="outSpan"></span>
+                <div id="output">
+
+                    <div class="firstResult outRow">
+                        <span id="A11R"></span>
+                        <span id="A12R"></span>
+                        <span id="A13R"></span>
+                    </div>
+
+                    <div class="secondResult outRow">
+                        <span id="A21R"></span>
+                        <span id="A22R"></span>
+                        <span id="A23R"></span>
+
+                    </div>
+
+                    <div class="thirdResult outRow">
+                        <span id="A31R"></span>
+                        <span id="A32R"></span>
+                        <span id="A33R"></span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="lText">Getting tired of calculating Matrix? <br>Don't worry, calculate it by one click.
+            <span> Made by&nbsp;<a href="https://xamanakib.github.io/Akibxaman.personal/#s02" target="blank"> AKIB&nbsp;</a></span>
+        </p>
+        <div class="button">
+            <button id="bgnBtn" onclick="promptMe()" class="btn">Source Code</button>
+
+        </div>
+
+
+    </div>
+
+</body>
+<script src="matrix.js"></script>
+
+</html>

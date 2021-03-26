@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+body {
+    background: linear-gradient(to right, #b3b0f5, #9fccf1fa);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ****************nav******************** */
+
+nav {
+    z-index: 10;
+    background-image: linear-gradient(to bottom, rgb(171 62 143), #313131);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul li {
+    text-align: center;
+    color: white;
+    list-style: none;
+    padding: 0 10px;
+    font-size: 23px;
+    font-family: 'Akaya Telivigala', cursive;
+    animation: all .2s ease-in;
+}
+
+nav ul li:hover {
+    color: #91ff00;
+    /* transform: scale(.87); */
+}
+
+
+/* ***************Input***************** */
+
+#inputCont {
+    width: fit-content;
+    margin: 40px auto 7px;
+    outline: none;
+}
+
+#inputCont input {
+    border: 2px solid black;
+}
+
+img {
+    width: 0px;
+}
+
+.InAndOut h1 {
+    width: fit-content;
+    margin: 15px auto;
+    text-align: center;
+    font-family: 'Akaya Telivigala', cursive;
+    background: aliceblue;
+    border-radius: 6px;
+}
+
+#name {
+    color: rebeccapurple;
+}
+
+#onStart {
+    text-align: center;
+    margin: 25px;
+    font-size: 25px;
+    font-family: 'Akaya Telivigala', cursive;
+    color: #0500ff;
+    text-shadow: 1px 1px 2px black
+}
+
+input {
+    outline: none;
+    width: 35px;
+    padding: 6px;
+    border-radius: 4px;
+    margin: 3px;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+span {
+    padding: 10px;
+}
+
+#Res {
+    width: fit-content;
+    margin: 20px auto;
+    font-size: 28px;
+    font-family: 'Akaya Telivigala', cursive;
+    color: red;
+}
+
+
+/* ***********************Output*********************** */
+
+.outCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#outSpan {
+    font-size: 25px;
+    font-family: 'Akaya Telivigala', cursive;
+    color: red;
+    display: none;
+}
+
+.outRow {
+    padding: 10px;
+    margin: auto;
+    width: fit-content;
+}
+
+#output {
+    width: fit-content;
+    margin: 12px 0px;
+    padding: 20px;
+}
+
+#output span {
+    font-family: 'Akaya Telivigala', cursive;
+    color: red;
+}
+
+.myBtn {
+    width: fit-content;
+    margin: auto;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    animation: all .2s ease-in-out;
+    border: 2px solid white;
+    background: #000000b8;
+    color: white;
+}
+
+.lText {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 8px 6px 6px 6px;
+    color: #090908f5
+}
+
+.lText span a {
+    text-decoration: none;
+    border: 2px solid;
+    color: #a5c5f2;
+    background: black;
+    border-radius: 40px;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.lText span a:hover {
+    background-color: #a5c5f2;
+    color: black;
+}
+
+.btn:hover {
+    transform: scale(.95);
+}
+
+#btnC {
+    display: none;
+}
+
+#btnD {
+    display: none;
+}
+
+#btnA {
+    display: none;
+}
+
+#btnI {
+    display: none;
+}
+
+#clr {
+    display: none;
+}
+
+.button {
+    width: fit-content;
+    margin: auto;
+}
+
+#bgnBtn {
+    cursor: pointer;
+    background-color: #000000c2;
+    color: rgb(241, 227, 227);
+    border: none;
+    border-radius: 4px;
+}
+
+#bgnBtn:hover {
+    box-shadow: -1px 0px 5px 3px #e7dfdf;
+    background-color: black;
+}
+
+@media only screen and (max-width: 500px) {
+    nav ul li {
+        font-size: 18px;
+    }
+    .InAndOut h1 {
+        font-size: 22px;
+    }
+    .lText {
+        padding: 0px
+    }
+}
