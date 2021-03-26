@@ -79,10 +79,9 @@ img {
 #onStart {
     text-align: center;
     margin: 25px;
-    font-size: 25px;
     font-family: 'Akaya Telivigala', cursive;
     color: #0500ff;
-     font-size: 32px;
+    font-size: 32px;
     text-shadow: 1px 1px 2px black
 }
 
@@ -238,7 +237,7 @@ span {
 
 @media only screen and (max-width: 500px) {
     nav ul li {
-        font-size: 18px;
+        font-size: 25px;
     }
     .InAndOut h1 {
         font-size: 22px;
