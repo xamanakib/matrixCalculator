@@ -189,7 +189,7 @@ span {
 }
 
 .lText span a:hover {
-    background-color: #a5c5f2;
+    background-color: transparent;
     color: black;
 }
 
